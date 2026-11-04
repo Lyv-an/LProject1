@@ -1,0 +1,462 @@
+
+
+:root{
+    --ocean:#003B5C;
+    --turquoise:#00B8A9;
+    --sand:#F5E6CA;
+    --gold:#D4AF37;
+    --white:#FFFFFF;
+    --dark:#1a1a1a;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    padding-top:90px;
+}
+
+section{
+    padding:80px 0;
+}
+
+.container{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:rgba(0,59,92,0.95);
+    transition:0.4s;
+}
+
+.navbar-brand{
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:var(--gold) !important;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    height:100vh;
+    background:url('../assets/images/hero.jpg')
+    center center/cover no-repeat;
+    position:relative;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.55);
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content{
+    color:white;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    font-weight:700;
+}
+
+.hero-content p{
+    font-size:1.4rem;
+    margin:20px 0;
+}
+
+.hero-content .btn{
+    margin:10px;
+    padding:12px 30px;
+    border-radius:30px;
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:var(--ocean);
+    font-weight:700;
+}
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.highlight-box{
+    text-align:center;
+    padding:30px;
+    transition:0.4s;
+}
+
+.highlight-box i{
+    color:var(--turquoise);
+    margin-bottom:20px;
+}
+
+.highlight-box:hover{
+    transform:translateY(-10px);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    border:none;
+    overflow:hidden;
+}
+
+.resort-card{
+    transition:0.4s;
+}
+
+.resort-card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.resort-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.card-title{
+    color:var(--ocean);
+    font-weight:600;
+}
+
+/* =========================
+   SERVICE CARDS
+========================= */
+
+.service-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+    margin-bottom:30px;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card h3{
+    color:var(--ocean);
+}
+
+.service-card ul{
+    list-style:none;
+    padding:0;
+}
+
+.service-card li{
+    padding:8px 0;
+}
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.carousel-item img{
+    height:600px;
+    object-fit:cover;
+}
+
+.carousel-caption{
+    background:rgba(0,0,0,0.5);
+    border-radius:10px;
+    padding:20px;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonial{
+    background:var(--sand);
+}
+
+.testimonial .carousel-item{
+    text-align:center;
+    padding:50px;
+}
+
+.testimonial h5{
+    font-style:italic;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:0.4s;
+    border-radius:10px;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-banner{
+    background:var(--ocean);
+    color:white;
+    padding:100px 0;
+    text-align:center;
+}
+
+.about-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* =========================
+   COUNTERS
+========================= */
+
+.counter-box{
+    text-align:center;
+    padding:25px;
+}
+
+.counter{
+    font-size:3rem;
+    color:var(--turquoise);
+    font-weight:700;
+}
+
+/* =========================
+   TEAM
+========================= */
+
+.team-member{
+    text-align:center;
+}
+
+.team-member img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+/* =========================
+   BOOKING FORM
+========================= */
+
+.booking-section{
+    padding:80px 0;
+    min-height:100vh;
+    background:#f8f9fa;
+}
+
+#bookingForm{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.form-control{
+    padding:12px;
+}
+
+.form-control:focus{
+    border-color:var(--turquoise);
+    box-shadow:none;
+}
+
+.btn-book{
+    background:var(--gold);
+    border:none;
+    color:black;
+    padding:12px 25px;
+}
+
+.btn-book:hover{
+    background:#c89c2f;
+}
+
+#counter{
+    text-align:right;
+    font-size:14px;
+    color:#888;
+    margin-top:5px;
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+
+.cta{
+    background:var(--ocean);
+    color:white;
+    text-align:center;
+    padding:80px 0;
+}
+
+.cta h2{
+    margin-bottom:20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:var(--ocean);
+    color:white;
+    padding:50px 0;
+}
+
+footer h4{
+    margin-bottom:20px;
+}
+
+footer a{
+    display:block;
+    margin-bottom:8px;
+    color:white;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:var(--gold);
+}
+
+.social-icons a{
+    margin-right:10px;
+    font-size:20px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary{
+    background:var(--turquoise);
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#009688;
+}
+
+.btn-warning{
+    background:var(--gold);
+    border:none;
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+#backToTop{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:none;
+    z-index:1000;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.hero-content h1{
+    font-size:3rem;
+}
+
+.carousel-item img{
+    height:450px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.2rem;
+}
+
+.hero-content p{
+    font-size:1rem;
+}
+
+.carousel-item img{
+    height:300px;
+}
+
+.counter{
+    font-size:2rem;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-content h1{
+    font-size:1.8rem;
+}
+
+.hero-content .btn{
+    display:block;
+    width:100%;
+    margin:10px auto;
+}
+
+}
